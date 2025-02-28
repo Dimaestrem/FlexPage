@@ -1,8 +1,14 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
 header {
     background-image: url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
     background-repeat: no-repeat;
@@ -16,6 +22,13 @@ header {
     align-items: center;
     color: white;
     
+}
+ 
+main {
+    
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;;
 }
 
 h1{
@@ -42,53 +55,95 @@ h2 {
     text-align: center;
 }
 
-h2+p {
+/*h2+p {
     column-count: 2;
     text-align: center;
     margin: auto;
-}
-.Card1 {
+}*/
+.card {
     max-width: 300px;
     width: 100%;
     min-height: 250px;
     margin: 50px auto;
-    box-shadow: 0 0 10px grey;
     overflow: hidden;
     padding-bottom: 20px;
+    color: white;
+    display: block;
   }
 
-  ul {
+/*ul {
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 list-style: none;
 padding-left: 230px;
 padding-right: 230px;
+  }*/
+
+  ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    background-color: rgb(71, 71, 71);
+    flex-direction: row;
+  }
+  #section-a .content-text {
+    column-count: 2
+  }
+  #section-a p {
+    padding-top: 0;
   }
 
-.card {
-max-width: 300px;
+#section-a {
+display: grid;
+background-color:  rgb(183, 181, 181);
+height: 300px;
 }
 
-.section-a {
-justify-content: space-between;
-padding: 50px;
-background-color: gray;
-height: 600px;
+#section-b {
+justify-content: space-around;
+display: flex;
+height: auto;
+padding: 2em 1em 1em;
+flex-direction: row;
 }
-
-section {
-    background-color: rgb(86, 84, 84);
-    min-height: 500px;
-}
-
-li {
+.card-content {
+    padding: 1.5em;
+    }
+/*li {
     width: 300px;
     margin-top: -480px;
     height: 400px;
     background-color: white;
     text-align: center;
 
+}*/
+
+li {
+    display: flex;
+    text-align: match-parent;
 }
 img {
     width: 300px;
 }
+
+#section-c {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 10px 20px;
+}
+
+#section-d {
+    display: flex;
+    background: #101417;
+    flex-direction: row;
+ }
+
+ #section-d .box {
+        padding: 2em;
+        color: #fff
+}
+#section-d .box:first-child {
+    background: #2690d4;
+}
+
