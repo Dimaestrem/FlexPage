@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -37,10 +38,11 @@ padding-top: 50px;
 padding-bottom: 0;
 }
 
-p {
+header > p {
 display: block;
-padding: 1em 0;
+padding: 2em 5em;
 max-width: 1000px;
+margin-top: 0;
 }
 button {
     color: white;
@@ -55,21 +57,17 @@ h2 {
     text-align: center;
 }
 
-/*h2+p {
-    column-count: 2;
-    text-align: center;
-    margin: auto;
-}*/
 .card {
     max-width: 300px;
     width: 100%;
     min-height: 250px;
-    margin: 50px auto;
+    padding-top: 50px;
     overflow: hidden;
-    padding-bottom: 20px;
-    color: white;
+    padding-bottom: 50px;
+    color: rgb(4, 4, 4);
     display: block;
   }
+
 
 /*ul {
 display: flex;
@@ -79,36 +77,52 @@ padding-left: 230px;
 padding-right: 230px;
   }*/
 
-  ul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    padding-inline-start: 40px;
-    background-color: rgb(71, 71, 71);
-    flex-direction: row;
-  }
-  #section-a .content-text {
-    column-count: 2
-  }
-  #section-a p {
-    padding-top: 0;
-  }
+ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(88, 87, 87);
+    min-width: 100%;
+}
+
+li {
+    padding: 20px 10px 20px;
+   align-items: end;
+}
+
+
+.content-text {
+max-width: 900px;
+width: 100%;
+min-width: 300px;
+margin: 0 auto;
+column-count: 2;
+}
 
 #section-a {
-display: grid;
-background-color:  rgb(183, 181, 181);
+display: flex;
+flex-direction: column;
+padding-top: 40px;
+background-color:  rgb(231, 229, 229);
 height: 300px;
+
+}
+
+.content-text {
+    padding-top: 40px;
 }
 
 #section-b {
-justify-content: space-around;
+
 display: flex;
 height: auto;
-padding: 2em 1em 1em;
-flex-direction: row;
+
 }
 .card-content {
     padding: 1.5em;
+    background-color: white;
+    margin-top: -10px;
     }
+
 /*li {
     width: 300px;
     margin-top: -480px;
@@ -118,24 +132,27 @@ flex-direction: row;
 
 }*/
 
-li {
-    display: flex;
-    text-align: match-parent;
-}
+
 img {
     width: 300px;
+   
 }
 
 #section-c {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 20px 10px 20px;
+    line-height: 1.5em;
+    margin: 100px 200px 100px;
+}
+#section-c h2{
+margin-bottom: 50px;
 }
 
 #section-d {
     display: flex;
-    background: #101417;
+    background: #292c2e;
     flex-direction: row;
  }
 
@@ -147,3 +164,13 @@ img {
     background: #2690d4;
 }
 
+.footer {
+    display: flex;
+    background-color: rgb(5, 4, 4);
+    min-width: 100%;
+    color: white;
+
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px;
+}
